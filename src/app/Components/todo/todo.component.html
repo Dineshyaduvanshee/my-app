@@ -1,0 +1,11 @@
+<h1>To DO List</h1>
+<input type="text" placeholder="Enter New Task" [(ngModel)]="task"/>
+<button (click)="addTask()">Add Task</button>
+<h2>{{ task }}</h2>
+@for(task of taskList;track task.id){
+<ul>
+  <li>
+    {{ task.task}}
+  </li>
+</ul>
+}

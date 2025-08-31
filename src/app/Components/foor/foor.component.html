@@ -1,0 +1,36 @@
+<h1>for Loop in anguler 19</h1>
+@for (user of users;track user) {
+  <h2>{{ user }}</h2>
+}
+<hr>
+@for(student of students;track student.name;let id=$index){
+ <h2>
+  <span>ID:{{ id }}</span>
+  <span>Name: {{ student.name }}</span>
+  <span>Age: {{ student.age }}</span>
+  <span>Email:{{student.email}}</span>
+  <button (click)="getName(student.name)">Get Name</button>
+ </h2>
+
+}
+<hr>
+<h1>For Loop contextual Variables</h1>
+
+@for(user of users;track user; let i=$index){
+
+  @if($first){
+    <h2 style="background-color: red;">First User: {{ user }} Index:{{ i }}</h2>
+  }@else if($last){
+    <h2 style="background-color: purple;">Last User: {{ user }} Index:{{ i }}</h2>
+  }@else{
+    <h2 style="background-color: yellow;">User: {{ user }} Index:{{ i }}</h2>
+  }
+
+  @if($even){
+    <h2 style="background-color: green;">Even User: {{ user }} Index:{{ i }}</h2>
+  }@else{
+    <h2 style="background-color: blue;">Odd User: {{ user }} Index:{{ i }}</h2>
+  }
+<h1>{{ $count }}</h1>
+}
+

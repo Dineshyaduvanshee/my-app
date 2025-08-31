@@ -1,0 +1,26 @@
+<p>singls works!</p>
+<h1>{{ count() }}</h1>
+<!-- <h1>{{ x }}</h1> -->
+<button (click)="count.set(20)">Increase signal</button>
+<!-- <button (click)="x = x + 1">Increase Property</button> -->
+<!-- <button (click)="updateValue()">Update Value</button> -->
+<!--
+<button (click)="updateValue('Dec')">Decrement</button>
+<h1>{{ count() }}</h1>
+<button (click)="updateValue('Inc')">Increment</button>
+<h1>{{ count() }}</h1> -->
+
+
+<button (click)="count.set(count()-1)">Decrement</button>
+<h1>{{ count() }}</h1>
+<button (click)="count.set(count()+1)">Increment</button>
+<h1>{{ count() }}</h1>
+<hr>
+<h1>{{ data() }}</h1>
+<!-- <h1>{{ countt() }}</h1> -->
+<button (click)="updateSignal()">Update Singnal</button>
+<hr>
+<h1>Computed signal</h1>
+<button (click)="showValue()">Show Value</button>
+<button (click)="updateX()">update X</button>
+

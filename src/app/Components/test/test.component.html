@@ -1,0 +1,25 @@
+<button (click)="handleColor(1)">Blue</button>
+<button (click)="handleColor(2)">Purple</button>
+<button (click)="handleColor(3)">Yellow</button>
+<button (click)="handleColor(4)">Pink</button>
+<input type="text" (input)="handleInput($event)" placeholder="Enter a number between 1-4">
+@if(color == 1){
+   <div style="background-color:blue; width: 100px; height: 100px;"></div>
+}@else if(color == 2){
+   <div style="background-color:purple; width: 100px; height: 100px;"></div>
+}
+@else if(color == 3){
+   <div style="background-color:yellow; width: 100px; height: 100px;"></div>
+}
+@else{
+  <div style="background-color:pink; width: 100px; height: 100px;"></div>
+}
+
+
+
+
+
+
+
+
+
