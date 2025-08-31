@@ -7,10 +7,11 @@ import { EffectsComponent } from "./Components/effects/effects.component";
 import { TWBindingComponent } from "./Components/twbinding/twbinding.component";
 import { FormsModule } from '@angular/forms';
 import { TodoComponent } from "./Components/todo/todo.component";
+import { DynStyleComponent } from "./Components/dyn-style/dyn-style.component";
 @Component({
   selector: 'app-root',
   standalone: true,                 // Required if using `imports` in component
-  imports: [FormsModule, TestComponent, SweechComponent, FoorComponent, SinglsComponent, EffectsComponent, TWBindingComponent, TodoComponent],
+  imports: [FormsModule, TestComponent, SweechComponent, FoorComponent, SinglsComponent, EffectsComponent, TWBindingComponent, TodoComponent, DynStyleComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] // corrected (should be plural `styleUrls`)
 })
