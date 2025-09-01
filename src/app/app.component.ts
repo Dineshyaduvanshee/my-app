@@ -8,32 +8,19 @@ import { TWBindingComponent } from "./Components/twbinding/twbinding.component";
 import { FormsModule } from '@angular/forms';
 import { TodoComponent } from "./Components/todo/todo.component";
 import { DynStyleComponent } from "./Components/dyn-style/dyn-style.component";
+import { DirectivvesComponent } from "./Components/directivves/directivves.component";
+import { RowtingComponent } from "./Components/rowting/rowting.component";
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from "./Components/header/header.component";
 @Component({
   selector: 'app-root',
   standalone: true,                 // Required if using `imports` in component
-  imports: [FormsModule, TestComponent, SweechComponent, FoorComponent, SinglsComponent, EffectsComponent, TWBindingComponent, TodoComponent, DynStyleComponent],
+  imports: [ RouterOutlet, FormsModule, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'] // corrected (should be plural `styleUrls`)
 })
 export class AppComponent {
   title = 'my-app';
-  display = true;
-  x = 3;
-  toggleDiv = false;
 
-  hide() {
-    this.display = false;
-  }
 
-  show() {
-    this.display = true;
-  }
-
-  toggle() {
-    this.display = !this.display;
-  }
-
-  toggleTwo() {
-    this.toggleDiv = !this.toggleDiv;
-  }
 }
